@@ -20,7 +20,7 @@ export const educationData: Education[] = [
   {
     date: "Jun 2022 – Aug 2022",
     institution: "UCLA (University of California, Los Angeles)",
-    degree: "Summer Session",
+    degree: "Electrical Engineering (Summer Session)",
     gpa: "4.0 / 4.3",
   },
 ];
