@@ -1,7 +1,9 @@
 import { ProfileSection } from "@/components/profile-section";
 import { PublicationEntry } from "@/components/publication-entry";
+import { ExperienceEntry } from "@/components/experience-entry";
 import { aboutMe } from "@/data/aboutme";
 import { publicationData } from "@/data/publication";
+import { experienceData } from "@/data/experience";
 
 export default function Home() {
   return (
@@ -51,6 +53,19 @@ export default function Home() {
                         <div className="h-px bg-zinc-200 my-8" />
                       )}
                     </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {experienceData.length > 0 && (
+              <section>
+                <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
+                  Experience
+                </h2>
+                <div className="space-y-4">
+                  {experienceData.map((experience, index) => (
+                    <ExperienceEntry key={index} experience={experience} />
                   ))}
                 </div>
               </section>
