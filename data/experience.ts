@@ -25,6 +25,7 @@ export const experienceData: Experience[] = [
     date: "Mar 2024 – Mar 2025",
     title: "Sole Computer Vision AI Researcher",
     company: "QUESTER",
+    companyUrl: "https://quester.kr/",
     points: [
       "Led the complete AI pipeline from data collection through deployment, focusing on object detection, segmentation, tracking, and stereo matching using C++.",
       "Recognized as Samsung C-Lab Outside 6th cohort; received the 2025 CES Innovation Award.",
