@@ -10,8 +10,8 @@ export const awardData: Award[] = [
   {
     year: "2025",
     title: "CES Innovation Award",
-    organization: "Consumer Technology Association / Samsung C-Lab Outside",
-    description: "Awarded at CES 2025 as part of QUESTER, recognized as Samsung C-Lab Outside 6th cohort, for innovation in hand-tracking glove technology with computer vision.",
+    organization: "CES",
+    description: "Awarded at CES 2025 as part of QUESTER for innovation in hand-tracking glove technology with computer vision.",
     imageUrl: "/images/CES-innovation-awards.jpg",
   },
   {
