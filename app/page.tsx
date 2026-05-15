@@ -1,5 +1,7 @@
 import { ProfileSection } from "@/components/profile-section";
+import { PublicationEntry } from "@/components/publication-entry";
 import { aboutMe } from "@/data/aboutme";
+import { publicationData } from "@/data/publication";
 
 export default function Home() {
   return (
@@ -34,6 +36,23 @@ export default function Home() {
                     </ul>
                   </details>
                 )}
+              </section>
+            )}
+            {publicationData.length > 0 && (
+              <section>
+                <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
+                  Publications
+                </h2>
+                <div className="space-y-6">
+                  {publicationData.map((publication, index) => (
+                    <div key={index}>
+                      <PublicationEntry publication={publication} />
+                      {index < publicationData.length - 1 && (
+                        <div className="h-px bg-zinc-200 my-8" />
+                      )}
+                    </div>
+                  ))}
+                </div>
               </section>
             )}
           </div>
