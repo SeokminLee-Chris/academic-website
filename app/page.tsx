@@ -3,16 +3,20 @@ import { aboutMe } from "@/data/aboutme";
 
 export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12 md:py-20">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
-        {/* Left sidebar */}
-        <div className="md:col-span-4">
-          <ProfileSection aboutMe={aboutMe} />
-        </div>
+    <div className="min-h-screen bg-[#FFFFFF]">
+      <div className="max-w-screen-lg mx-auto px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
+          {/* Left Column - Fixed sidebar */}
+          <div className="col-span-12 md:col-span-4 space-y-12 mb-8 md:mb-0">
+            <div className="md:sticky top-12 space-y-8">
+              <ProfileSection aboutMe={aboutMe} />
+            </div>
+          </div>
 
-        {/* Right main content — to be filled in later */}
-        <div className="md:col-span-8">
-          {/* Sections will go here */}
+          {/* Right Column - Scrolling content */}
+          <div className="col-span-12 md:col-span-9 md:col-start-5 space-y-12">
+            {/* Sections will go here */}
+          </div>
         </div>
       </div>
     </div>
