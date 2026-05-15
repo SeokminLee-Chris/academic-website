@@ -26,7 +26,7 @@ export const aboutMe: AboutMe = {
   institutionUrl: "https://www.add.re.kr/eps",
   description: "",
   email: "lsm9434@gmail.com",
-  imageUrl: "/images/profile.jpg.png",
+  imageUrl: "/images/profile.png",
   blogUrl: "https://seokmin-hardstudy.tistory.com/",
   googleScholarUrl: "https://scholar.google.com/citations?user=ciiz7PkAAAAJ&hl=en",
   githubUsername: "SeokminLee-Chris",

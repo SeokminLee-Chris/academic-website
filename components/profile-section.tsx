@@ -48,7 +48,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
         <div className="w-1/3 md:w-full flex-shrink-0">
           <div className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]">
             <Image
-              src={aboutMe.imageUrl}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${aboutMe.imageUrl}`}
               alt={aboutMe.name}
               fill
               priority
