@@ -25,9 +25,13 @@ export default function Home() {
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
                       Research Interests
                     </summary>
-                    <div className="mt-2 font-serif text-md leading-relaxed text-zinc-800">
-                      {aboutMe.researchInterests}
-                    </div>
+                    <ul className="mt-2 space-y-1">
+                      {aboutMe.researchInterests.map((interest, i) => (
+                        <li key={i} className="font-serif text-md leading-relaxed text-zinc-800">
+                          {interest}
+                        </li>
+                      ))}
+                    </ul>
                   </details>
                 )}
               </section>

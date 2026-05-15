@@ -4,7 +4,7 @@ export interface AboutMe {
   institution: string;
   institutionUrl?: string;
   description: string;
-  researchInterests?: string;
+  researchInterests?: string[];
   email: string;
   imageUrl?: string;
   blogUrl?: string;
@@ -25,7 +25,12 @@ export const aboutMe: AboutMe = {
   institution: "Agency for Defense Development",
   institutionUrl: "https://www.add.re.kr/eps",
   description: "I am currently serving as a First Lieutenant in the Republic of Korea Army and working as a research officer at the Agency for Defense Development, the Korean counterpart to the U.S. DARPA. Previously, I completed my bachelor's degree in Computer Science at DGIST.",
-  researchInterests: "Robot Foundation Models, VLA (Vision-Language-Action Models), World Models, Memory Systems in VLA",
+  researchInterests: [
+    "Robot Foundation Models",
+    "VLA (Vision-Language-Action Models)",
+    "World Models",
+    "Memory Systems in VLA",
+  ],
   email: "lsm9434@gmail.com",
   imageUrl: "/images/profile.png",
   blogUrl: "https://seokmin-hardstudy.tistory.com/",
