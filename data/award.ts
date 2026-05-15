@@ -18,7 +18,7 @@ export const awardData: Award[] = [
     year: "2025",
     title: "Chairman's Award",
     organization: "DGIST",
-    description: "Awarded at graduation for outstanding academic achievement and exceptional dedication to helping fellow students — given to graduates who excel not only in academics but also in their contributions to others.",
+    description: "Given at graduation to a student who excels not only academically but also in helping fellow students.",
     imageUrl: "/images/chairman.jpg",
   },
 ];
