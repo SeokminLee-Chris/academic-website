@@ -44,6 +44,7 @@ export const experienceData: Experience[] = [
     date: "Dec 2022 – Jan 2024",
     title: "AI Safety Research Intern",
     company: "HASS LAB",
+    companyUrl: "https://sites.google.com/view/hass-dgist/hass-lab",
     advisor: "Prof. Baekgyu Kim",
     points: [
       "Developed games using Unreal Engine as gameplay demos and experiments.",
