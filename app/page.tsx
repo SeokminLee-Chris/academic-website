@@ -1,9 +1,13 @@
 import { ProfileSection } from "@/components/profile-section";
 import { PublicationEntry } from "@/components/publication-entry";
 import { ExperienceEntry } from "@/components/experience-entry";
+import { EducationEntry } from "@/components/education-entry";
+import { AwardEntry } from "@/components/award-entry";
 import { aboutMe } from "@/data/aboutme";
 import { publicationData } from "@/data/publication";
 import { experienceData } from "@/data/experience";
+import { educationData } from "@/data/education";
+import { awardData } from "@/data/award";
 
 export default function Home() {
   return (
@@ -19,6 +23,8 @@ export default function Home() {
 
           {/* Right Column - Scrolling content */}
           <div className="col-span-12 md:col-span-9 md:col-start-5 space-y-12">
+
+            {/* About + Research Interests */}
             {aboutMe.description && (
               <section>
                 <p className="font-serif text-md leading-relaxed text-zinc-800 mb-5">
@@ -40,6 +46,8 @@ export default function Home() {
                 )}
               </section>
             )}
+
+            {/* Publications */}
             {publicationData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
@@ -58,6 +66,7 @@ export default function Home() {
               </section>
             )}
 
+            {/* Experience */}
             {experienceData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
@@ -70,6 +79,35 @@ export default function Home() {
                 </div>
               </section>
             )}
+
+            {/* Education */}
+            {educationData.length > 0 && (
+              <section>
+                <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
+                  Education
+                </h2>
+                <div className="space-y-6">
+                  {educationData.map((education, index) => (
+                    <EducationEntry key={index} education={education} />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Awards */}
+            {awardData.length > 0 && (
+              <section>
+                <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
+                  Awards
+                </h2>
+                <div className="space-y-8">
+                  {awardData.map((award, index) => (
+                    <AwardEntry key={index} award={award} />
+                  ))}
+                </div>
+              </section>
+            )}
+
           </div>
         </div>
       </div>
