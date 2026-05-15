@@ -11,6 +11,9 @@ export function EducationEntry({ education }: { education: Education }) {
       {education.gpa && (
         <p className="text-sm text-zinc-400">GPA: {education.gpa}</p>
       )}
+      {education.note && (
+        <p className="text-sm text-zinc-400">{education.note}</p>
+      )}
       {education.advisor && (
         <p className="text-sm text-zinc-500 italic">Advisor: {education.advisor}</p>
       )}

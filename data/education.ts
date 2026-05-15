@@ -15,6 +15,7 @@ export const educationData: Education[] = [
     institution: "DGIST (Daegu Gyeongbuk Institute of Science and Technology)",
     degree: "B.S. in Computer Science and Engineering",
     gpa: "4.12 / 4.30 (CS: 4.26 / 4.30)",
+    note: "3rd among all graduates",
   },
   {
     date: "Jun 2022 – Aug 2022",

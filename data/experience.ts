@@ -41,5 +41,6 @@ export const experienceData: Experience[] = [
     date: "Dec 2022 – Jan 2024",
     title: "AI Safety Research Intern",
     company: "HASS LAB",
+    advisor: "Prof. Baekgyu Kim",
   },
 ];
