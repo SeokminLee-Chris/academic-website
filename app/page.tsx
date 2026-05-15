@@ -15,7 +15,23 @@ export default function Home() {
 
           {/* Right Column - Scrolling content */}
           <div className="col-span-12 md:col-span-9 md:col-start-5 space-y-12">
-            {/* Sections will go here */}
+            {aboutMe.description && (
+              <section>
+                <p className="font-serif text-md leading-relaxed text-zinc-800 mb-5">
+                  {aboutMe.description}
+                </p>
+                {aboutMe.researchInterests && (
+                  <details className="mb-4">
+                    <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
+                      Research Interests
+                    </summary>
+                    <div className="mt-2 font-serif text-md leading-relaxed text-zinc-800">
+                      {aboutMe.researchInterests}
+                    </div>
+                  </details>
+                )}
+              </section>
+            )}
           </div>
         </div>
       </div>
