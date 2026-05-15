@@ -16,7 +16,7 @@ export const experienceData: Experience[] = [
     company: "Agency for Defense Development (ADD)",
     companyUrl: "https://www.add.re.kr/eps",
     points: [
-      "Selected as one of the research officers nationwide dedicated to science-and-technology R&D for national defense.",
+      "Selected as one of 20 research officers nationwide dedicated to science-and-technology R&D for national defense.",
       "ADD is a government research institute responsible for developing advanced defense technologies and weapon systems for South Korea's military.",
     ],
   },
