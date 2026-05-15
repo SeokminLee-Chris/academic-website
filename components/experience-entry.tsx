@@ -59,6 +59,17 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
         {!experience.points && experience.description && (
           <p className="text-sm italic text-zinc-600">{experience.description}</p>
         )}
+
+        {experience.projectUrl && (
+          <a
+            href={experience.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-2 text-xs text-zinc-400 hover:text-zinc-700 underline underline-offset-2 transition-colors"
+          >
+            View Projects →
+          </a>
+        )}
       </div>
     </div>
   );

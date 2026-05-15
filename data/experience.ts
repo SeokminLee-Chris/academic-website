@@ -6,6 +6,7 @@ export interface Experience {
   advisor?: string;
   manager?: string;
   companyUrl?: string;
+  projectUrl?: string;
   points?: string[];
 }
 
@@ -33,8 +34,9 @@ export const experienceData: Experience[] = [
     date: "Jun 2024 – Aug 2024",
     title: "Graph Neural Network Research Intern",
     company: "Universität Ulm",
+    advisor: "Prof. Ansgar Scherp",
     points: [
-      "Conducted research on Graph Neural Networks at Universität Ulm, Germany.",
+      "Conducted research on few-shot graph classification at Universität Ulm, Germany.",
     ],
   },
   {
@@ -42,5 +44,10 @@ export const experienceData: Experience[] = [
     title: "AI Safety Research Intern",
     company: "HASS LAB",
     advisor: "Prof. Baekgyu Kim",
+    points: [
+      "Developed games using Unreal Engine as gameplay demos and experiments.",
+      "Built an autonomous RC car/drone that follows a specific person using computer vision.",
+    ],
+    projectUrl: "https://seokminlee-chris.github.io/self-introduction-website/projects_eng.html",
   },
 ];
