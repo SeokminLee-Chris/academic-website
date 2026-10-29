@@ -60,7 +60,7 @@ export const experienceSource: ExperienceSource[] = [
     points: [
       {
         ko: "독일 울름 대학교에서 few-shot graph node classification 연구를 수행했습니다.",
-        en: "Conducted research on few-shot graph classification at Universität Ulm, Germany.",
+        en: "Conducted research on few-shot graph node classification at Universität Ulm, Germany.",
       },
     ],
   },
@@ -73,11 +73,11 @@ export const experienceSource: ExperienceSource[] = [
     points: [
       {
         ko: "언리얼 엔진으로 여러 게임을 개발했습니다.",
-        en: "Developed games using Unreal Engine as gameplay demos and experiments.",
+        en: "Developed several games using Unreal Engine.",
       },
       {
         ko: "특정 사람을 따라다니는 자율 RC카/드론을 제작했습니다.",
-        en: "Built an autonomous RC car/drone that follows a specific person using computer vision.",
+        en: "Built an autonomous RC car/drone that follows a specific person.",
       },
       {
         ko: "학부생을 위한 연구실 웹사이트를 개발했으며, 연구실 공식 웹페이지로 채택되어 현재까지 사용되고 있습니다. 제가 수행한 프로젝트들도 이 웹사이트에 정리되어 있습니다.",
