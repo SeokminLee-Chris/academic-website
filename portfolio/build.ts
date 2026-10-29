@@ -48,9 +48,12 @@ function img(p?: string): string {
   return `file://${dst}`;
 }
 
+/** Portfolio-only detail (not shown on the website). */
+const birthDate = { ko: "2002년 8월 2일", en: "Aug 2, 2002" } as const;
+
 const labels = {
-  ko: { profile: "포트폴리오", contact: "연락처", paper: "논문", page: "프로젝트 페이지", code: "코드", gpa: "GPA", advisor: "지도교수" },
-  en: { profile: "Portfolio", contact: "Contact", paper: "Paper", page: "Project page", code: "Code", gpa: "GPA", advisor: "Advisor" },
+  ko: { birthDate: "생년월일", profile: "포트폴리오", contact: "연락처", paper: "논문", page: "프로젝트 페이지", code: "코드", gpa: "GPA", advisor: "지도교수" },
+  en: { birthDate: "Date of birth", profile: "Portfolio", contact: "Contact", paper: "Paper", page: "Project page", code: "Code", gpa: "GPA", advisor: "Advisor" },
 } satisfies Record<Locale, Record<string, string>>;
 
 function entry(e: Experience, t: (typeof ui)[Locale], l: (typeof labels)[Locale]) {
@@ -170,7 +173,7 @@ function render(locale: Locale): string {
       ${me.blogUrl ? `<div><span class="k">Blog</span>${esc(me.blogUrl.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</div>` : ""}
       <div><span class="k">Web</span>seokminlee-chris.github.io/academic-website</div>
     </div>
-    ${me.lastUpdated ? `<p class="updated">${esc(t.lastUpdated)}: ${esc(me.lastUpdated)}</p>` : ""}
+    <p class="updated">${l.birthDate}: ${birthDate[locale]}</p>
   </div>
 </header>
 
