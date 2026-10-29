@@ -6,6 +6,7 @@ export interface AboutMeSource {
   institution: Text;
   institutionUrl?: string;
   description: Text;
+  philosophy?: Text[];
   researchInterests?: Text[];
   engineeringInterests?: Text[];
   email: string;
@@ -33,6 +34,24 @@ export const aboutMeSource: AboutMeSource = {
     ko: "현재 대한민국 육군 중위로 복무 중이며, 국방과학연구소(ADD)에서 과학기술전문사관(현역연구원)으로 근무하고 있습니다. 전역 예정일은 2028년 5월 31일입니다. DGIST 컴퓨터공학과를 졸업했습니다.",
     en: "I am currently serving as a First Lieutenant in the Republic of Korea Army and working as a research officer at the Agency for Defense Development, the Korean counterpart to the U.S. DARPA. Previously, I completed my bachelor's degree in Computer Science at DGIST.",
   },
+  philosophy: [
+    {
+      ko: "저는 **연구와 엔지니어링 역량을 모두 갖춘 사람**이 되고 싶습니다.",
+      en: "I want to be someone who is skilled in both **research and engineering**.",
+    },
+    {
+      ko: "학부 시절에는 컴퓨터공학의 기초를 탄탄히 다졌고, 이후 QUESTER에서 Computer Vision 엔지니어로 일하며 실제 제품을 개발했습니다. 이 과정에서 여러 기술을 하나의 시스템으로 잘 통합하는 것도 중요하지만, **핵심 기술 하나의 성능이 제품 전체의 경쟁력을 크게 좌우할 수 있다**는 것을 깨달았습니다. 이를 계기로 기존 기술을 활용하는 엔지니어링을 넘어 기술 자체의 성능을 높이는 연구에도 관심을 갖게 되었고, 실제로 Computer Vision 연구를 수행해 논문을 발표하는 경험도 쌓았습니다.",
+      en: "During my undergraduate years, I focused on building a strong foundation in computer science. I then worked as a Computer Vision Engineer at QUESTER, where I gained hands-on experience developing real products. This taught me that while integrating different technologies into a working system is important, **the performance of a single key component can make a huge difference in a product's competitiveness**. This experience sparked my interest in not just applying existing technologies, but improving the technologies themselves. I went on to conduct research in computer vision and publish a research paper.",
+    },
+    {
+      ko: "저는 **산업 현장에서 해결해야 할 문제를 직접 정의하고, 이를 해결하기 위한 핵심 기술을 깊이 연구하는 동시에, 여러 기술을 효과적으로 통합해 실제로 작동하는 시스템과 제품을 설계할 수 있는 사람**이 되고 싶습니다. 이를 위해 연구와 엔지니어링 역량을 함께 발전시켜 나가고자 합니다.",
+      en: "My goal is to **identify real problems in industry, develop the core technologies needed to solve them, and design systems that bring those technologies together into working products**. I want to keep growing as both a researcher and an engineer, with the ability to dive deep into individual technologies while also seeing the bigger picture.",
+    },
+    {
+      ko: "최근에는 Computer Vision뿐만 아니라 Robotics, LLM Agent, 회로 설계 자동화 등 분야를 가리지 않고 논문을 읽고 직접 연구하며 지식과 경험을 넓혀가고 있습니다. 또한 다양한 분야의 해커톤에 참여하며 실제 현장에서 어떤 문제들이 존재하고, 무엇이 필요한지 이해하려고 노력하고 있습니다. **특정 분야에 스스로를 한정하기보다, 해결할 가치가 있는 문제라면 분야에 관계없이 도전하고 싶습니다.**",
+      en: "Recently, I've been exploring fields beyond computer vision, including robotics, LLM agents, and circuit design automation. I regularly read research papers and conduct my own research to expand my knowledge across different areas. I also participate in hackathons across various fields to better understand the challenges people face in the real world. **Rather than limiting myself to a single field, I want to take on any problem worth solving.**",
+    },
+  ],
   researchInterests: [
     {
       ko: "AI 에이전트를 더욱 강력하게 만들어 분야에 관계없이 다양한 연구 문제를 해결하는 데 관심이 있습니다. 에이전트가 스스로 경험을 쌓고, 실패에서 배우며, 점차 더 복잡한 문제를 해결할 수 있도록 만드는 연구를 하고 싶습니다.",

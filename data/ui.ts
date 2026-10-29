@@ -5,8 +5,9 @@ export const ui = {
   ko: {
     htmlLang: "ko",
     languageName: "한국어",
-    researchInterests: "연구 관심 분야",
-    engineeringInterests: "엔지니어링 관심 분야",
+    philosophy: "지향점",
+    researchInterests: "최근 연구 관심 분야",
+    engineeringInterests: "최근 엔지니어링 관심 분야",
     publications: "연구 논문",
     engineeringProjects: "엔지니어링 프로젝트",
     comingSoon: "공개 예정입니다.",
@@ -29,8 +30,9 @@ export const ui = {
   en: {
     htmlLang: "en",
     languageName: "English",
-    researchInterests: "Research Interests",
-    engineeringInterests: "Engineering Interests",
+    philosophy: "What I Strive For",
+    researchInterests: "Recent Research Interests",
+    engineeringInterests: "Recent Engineering Interests",
     publications: "Research Publications",
     engineeringProjects: "Engineering Projects",
     comingSoon: "Coming soon.",

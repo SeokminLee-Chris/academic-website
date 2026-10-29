@@ -5,6 +5,7 @@ import { EducationEntry } from "@/components/education-entry";
 import { AwardEntry } from "@/components/award-entry";
 import { ProjectEntry } from "@/components/project-entry";
 import { LanguageToggle } from "@/components/language-toggle";
+import { RichText } from "@/components/rich-text";
 import { Locale } from "@/data/i18n";
 import { ui } from "@/data/ui";
 import { getAboutMe } from "@/data/aboutme";
@@ -49,6 +50,20 @@ export function HomePage({ locale }: { locale: Locale }) {
                 <p className="font-serif text-md leading-relaxed text-zinc-800 mb-5">
                   {aboutMe.description}
                 </p>
+                {aboutMe.philosophy && (
+                  <details open className="mb-4">
+                    <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
+                      {t.philosophy}
+                    </summary>
+                    <div className="mt-2 space-y-3 pl-8">
+                      {aboutMe.philosophy.map((paragraph, i) => (
+                        <p key={i} className="font-serif text-md leading-relaxed text-zinc-800">
+                          <RichText text={paragraph} />
+                        </p>
+                      ))}
+                    </div>
+                  </details>
+                )}
                 {aboutMe.researchInterests && (
                   <details open className="mb-4">
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
@@ -57,7 +72,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                     <div className="mt-2 space-y-3 pl-8">
                       {aboutMe.researchInterests.map((paragraph, i) => (
                         <p key={i} className="font-serif text-md leading-relaxed text-zinc-800">
-                          {paragraph}
+                          <RichText text={paragraph} />
                         </p>
                       ))}
                     </div>
@@ -71,7 +86,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                     <div className="mt-2 space-y-3 pl-8">
                       {aboutMe.engineeringInterests.map((paragraph, i) => (
                         <p key={i} className="font-serif text-md leading-relaxed text-zinc-800">
-                          {paragraph}
+                          <RichText text={paragraph} />
                         </p>
                       ))}
                     </div>
