@@ -36,12 +36,12 @@ export const experienceSource: ExperienceSource[] = [
   },
   {
     date: { ko: "2024.03 – 2025.03", en: "Mar 2024 – Mar 2025" },
-    title: { ko: "컴퓨터 비전 AI 연구원 (단독 담당)", en: "Sole Computer Vision AI Researcher" },
+    title: { ko: "컴퓨터 비전 AI 연구원", en: "Sole Computer Vision AI Researcher" },
     company: "QUESTER",
     companyUrl: "https://quester.kr/",
     points: [
       {
-        ko: "데이터 수집부터 배포까지 AI 파이프라인 전체를 주도했으며, C++ 기반의 객체 탐지, 세그멘테이션, 트래킹, 스테레오 매칭을 담당했습니다.",
+        ko: "데이터 수집부터 모델 설계, 배포까지 AI 파이프라인 전체를 주도했으며, C++ 기반의 객체 탐지, 세그멘테이션, 트래킹, 스테레오 매칭 파이프라인을 개발했습니다.",
         en: "Led the complete AI pipeline from data collection through deployment, focusing on object detection, segmentation, tracking, and stereo matching using C++.",
       },
       {
