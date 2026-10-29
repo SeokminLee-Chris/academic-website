@@ -26,7 +26,6 @@ export type AboutMe = Localized<AboutMeSource>;
 
 export const aboutMeSource: AboutMeSource = {
   name: { ko: "이석민", en: "Seokmin Lee" },
-  altName: { ko: "Seokmin Lee", en: "" },
   title: { ko: "연구장교 (중위)", en: "Research Officer" },
   institution: { ko: "국방과학연구소 (ADD)", en: "Agency for Defense Development" },
   institutionUrl: "https://www.add.re.kr/eps",

@@ -5,7 +5,7 @@ import { getAboutMe } from "@/data/aboutme";
 const aboutMe = getAboutMe("ko");
 
 export const metadata: Metadata = {
-  title: `${aboutMe.name} | ${aboutMe.altName}`,
+  title: `${aboutMe.name} | Seokmin Lee`,
   description: aboutMe.description,
 };
 
