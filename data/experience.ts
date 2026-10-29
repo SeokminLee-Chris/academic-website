@@ -47,8 +47,8 @@ export const experienceSource: ExperienceSource[] = [
         en: "Led the complete AI pipeline from data collection through deployment, focusing on object detection, segmentation, tracking, and stereo matching using C++.",
       },
       {
-        ko: "삼성 C-Lab Outside 6기에 선정되었고, 2025 CES 혁신상을 수상했습니다.",
-        en: "Recognized as Samsung C-Lab Outside 6th cohort; received the 2025 CES Innovation Award.",
+        ko: "삼성 C-Lab Outside 6기에 선정되었고, 2025 CES 혁신상을 수상했으며 라스베이거스 CES 2025 현장에서 직접 기술을 발표했습니다.",
+        en: "Recognized as Samsung C-Lab Outside 6th cohort; received the 2025 CES Innovation Award and presented the technology in person at CES 2025 in Las Vegas.",
       },
     ],
   },
