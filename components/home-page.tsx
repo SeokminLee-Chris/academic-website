@@ -13,6 +13,7 @@ import { getExperienceData } from "@/data/experience";
 import { getEducationData } from "@/data/education";
 import { getAwardData } from "@/data/award";
 import { getProjectData } from "@/data/project";
+import { getActivityData } from "@/data/activity";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const t = ui[locale];
@@ -22,6 +23,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   const educationData = getEducationData(locale);
   const awardData = getAwardData(locale);
   const projectData = getProjectData(locale);
+  const activityData = getActivityData(locale);
 
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
@@ -127,6 +129,20 @@ export function HomePage({ locale }: { locale: Locale }) {
                 <div className="space-y-4">
                   {experienceData.map((experience, index) => (
                     <ExperienceEntry key={index} experience={experience} locale={locale} />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Leadership & Community Activities */}
+            {activityData.length > 0 && (
+              <section>
+                <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
+                  {t.activities}
+                </h2>
+                <div className="space-y-4">
+                  {activityData.map((activity, index) => (
+                    <ExperienceEntry key={index} experience={activity} locale={locale} />
                   ))}
                 </div>
               </section>
