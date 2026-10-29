@@ -70,7 +70,7 @@ export function ExperienceEntry({ experience, locale }: { experience: Experience
             rel="noopener noreferrer"
             className="inline-block mt-2 text-xs text-zinc-400 hover:text-zinc-700 underline underline-offset-2 transition-colors"
           >
-            {t.viewProjects}
+            {experience.projectLabel || t.viewProjects}
           </a>
         )}
       </div>

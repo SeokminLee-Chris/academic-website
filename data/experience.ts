@@ -9,6 +9,8 @@ export interface ExperienceSource {
   manager?: Text;
   companyUrl?: string;
   projectUrl?: string;
+  /** Link text for projectUrl; falls back to the generic "View Projects" label. */
+  projectLabel?: Text;
   points?: Text[];
 }
 
@@ -78,11 +80,15 @@ export const experienceSource: ExperienceSource[] = [
         en: "Built an autonomous RC car/drone that follows a specific person using computer vision.",
       },
       {
-        ko: "학부생을 위한 연구실 웹사이트를 개발했으며, 연구실 공식 웹페이지로 채택되어 현재까지 사용되고 있습니다.",
-        en: "Built a lab website for undergraduate students, which was adopted as the lab's official webpage and is still in use.",
+        ko: "학부생을 위한 연구실 웹사이트를 개발했으며, 연구실 공식 웹페이지로 채택되어 현재까지 사용되고 있습니다. 제가 수행한 프로젝트들도 이 웹사이트에 정리되어 있습니다.",
+        en: "Built a lab website for undergraduate students, which was adopted as the lab's official webpage and is still in use. My projects at the lab are also documented there.",
       },
     ],
-    projectUrl: "https://seokminlee-chris.github.io/self-introduction-website/projects_eng.html",
+    projectUrl: "https://hass-dgist.github.io/undergraduate/#projects",
+    projectLabel: {
+      ko: "연구실 웹사이트에서 제 프로젝트 보기 →",
+      en: "View my projects on the lab website →",
+    },
   },
 ];
 
