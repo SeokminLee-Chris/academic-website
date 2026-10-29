@@ -21,6 +21,17 @@ export const activitySource: ActivitySource[] = [
       },
     ],
   },
+  {
+    date: { ko: "2023.03 – 2023.12", en: "Mar 2023 – Dec 2023" },
+    title: { ko: "교외행사국 국원", en: "External Events Team Member" },
+    company: { ko: "DGIST 학생회", en: "DGIST Student Council" },
+    points: [
+      {
+        ko: "타 대학 학생회와 협력하여 해커톤, STadium(과학기술원 연합 체육대회) 등 여러 대학이 참여하는 연합 행사를 기획하고 개최했습니다.",
+        en: "Collaborated with student councils from other universities to organize joint events, including hackathons and STadium, an inter-university sports competition among science and technology institutes.",
+      },
+    ],
+  },
 ];
 
 export function getActivityData(locale: Locale): Activity[] {
