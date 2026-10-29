@@ -30,8 +30,12 @@ export const educationSource: EducationSource[] = [
       ko: "UCLA (캘리포니아 대학교 로스앤젤레스)",
       en: "UCLA (University of California, Los Angeles)",
     },
-    degree: { ko: "전기공학 (여름 학기)", en: "Electrical Engineering (Summer Session)" },
+    degree: {
+      ko: "전기공학 (여름 학기, DGIST FGLP 프로그램 파견)",
+      en: "Electrical Engineering (Summer Session, via DGIST FGLP Program)",
+    },
     gpa: "4.0 / 4.3",
+    note: { ko: "최우수 참가자 선정", en: "Selected as Outstanding Participant" },
   },
 ];
 
