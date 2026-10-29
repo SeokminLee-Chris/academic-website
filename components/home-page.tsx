@@ -3,6 +3,7 @@ import { PublicationEntry } from "@/components/publication-entry";
 import { ExperienceEntry } from "@/components/experience-entry";
 import { EducationEntry } from "@/components/education-entry";
 import { AwardEntry } from "@/components/award-entry";
+import { ProjectEntry } from "@/components/project-entry";
 import { LanguageToggle } from "@/components/language-toggle";
 import { Locale } from "@/data/i18n";
 import { ui } from "@/data/ui";
@@ -11,6 +12,7 @@ import { getPublicationData } from "@/data/publication";
 import { getExperienceData } from "@/data/experience";
 import { getEducationData } from "@/data/education";
 import { getAwardData } from "@/data/award";
+import { getProjectData } from "@/data/project";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const t = ui[locale];
@@ -19,6 +21,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   const experienceData = getExperienceData(locale);
   const educationData = getEducationData(locale);
   const awardData = getAwardData(locale);
+  const projectData = getProjectData(locale);
 
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
@@ -93,6 +96,27 @@ export function HomePage({ locale }: { locale: Locale }) {
                 </div>
               </section>
             )}
+
+            {/* Engineering Projects */}
+            <section>
+              <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
+                {t.engineeringProjects}
+              </h2>
+              {projectData.length > 0 ? (
+                <div className="space-y-6">
+                  {projectData.map((project, index) => (
+                    <div key={index}>
+                      <ProjectEntry project={project} locale={locale} />
+                      {index < projectData.length - 1 && (
+                        <div className="h-px bg-zinc-200 my-8" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm italic text-zinc-400">{t.comingSoon}</p>
+              )}
+            </section>
 
             {/* Experience */}
             {experienceData.length > 0 && (
