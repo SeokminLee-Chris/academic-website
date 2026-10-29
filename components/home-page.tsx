@@ -49,13 +49,13 @@ export function HomePage({ locale }: { locale: Locale }) {
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
                       {t.researchInterests}
                     </summary>
-                    <ul className="mt-2 space-y-1 pl-8">
-                      {aboutMe.researchInterests.map((interest, i) => (
-                        <li key={i} className="font-serif text-md leading-relaxed text-zinc-800">
-                          {interest}
-                        </li>
+                    <div className="mt-2 space-y-3 pl-8">
+                      {aboutMe.researchInterests.map((paragraph, i) => (
+                        <p key={i} className="font-serif text-md leading-relaxed text-zinc-800">
+                          {paragraph}
+                        </p>
                       ))}
-                    </ul>
+                    </div>
                   </details>
                 )}
                 {aboutMe.engineeringInterests && (
