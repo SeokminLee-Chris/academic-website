@@ -18,7 +18,7 @@ export const experienceSource: ExperienceSource[] = [
   {
     date: { ko: "2025.06 – 2028.05", en: "Jun 2025 – May 2028" },
     title: {
-      ko: "중위 / 과학기술전문사관 (연구장교)",
+      ko: "중위 / 과학기술전문사관 (현역연구원)",
       en: "First Lieutenant / Research Officer for National Defense",
     },
     company: { ko: "국방과학연구소 (ADD)", en: "Agency for Defense Development (ADD)" },
