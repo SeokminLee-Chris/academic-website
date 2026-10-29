@@ -34,6 +34,10 @@ export const experienceSource: ExperienceSource[] = [
         ko: "ADD는 대한민국 군을 위한 첨단 국방 기술과 무기체계를 개발하는 정부출연 연구기관입니다.",
         en: "ADD is a government research institute responsible for developing advanced defense technologies and weapon systems for South Korea's military.",
       },
+      {
+        ko: "현재 Computer Vision 업무를 담당하고 있으며, 구체적인 내용은 보안상 공개할 수 없는 점 양해 부탁드립니다.",
+        en: "I am currently working on computer vision tasks at ADD. Details of my work cannot be disclosed for security reasons.",
+      },
     ],
   },
   {
