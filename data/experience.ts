@@ -70,11 +70,11 @@ export const experienceSource: ExperienceSource[] = [
     advisor: { ko: "김백규 교수님", en: "Prof. Baekgyu Kim" },
     points: [
       {
-        ko: "언리얼 엔진으로 게임플레이 데모 및 실험용 게임을 개발했습니다.",
+        ko: "언리얼 엔진으로 여러 게임을 개발했습니다.",
         en: "Developed games using Unreal Engine as gameplay demos and experiments.",
       },
       {
-        ko: "컴퓨터 비전으로 특정 사람을 따라다니는 자율 RC카/드론을 제작했습니다.",
+        ko: "특정 사람을 따라다니는 자율 RC카/드론을 제작했습니다.",
         en: "Built an autonomous RC car/drone that follows a specific person using computer vision.",
       },
     ],
