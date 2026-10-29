@@ -47,6 +47,21 @@ export const activitySource: ActivitySource[] = [
       },
     ],
   },
+  {
+    date: { ko: "2022.12 – 현재", en: "Dec 2022 – Present" },
+    title: { ko: "교육 봉사", en: "Volunteer Instructor" },
+    company: { ko: "송도고등학교 (모교)", en: "Songdo High School (Alma Mater)" },
+    points: [
+      {
+        ko: "재학 시절의 성실함을 인정받아 졸업 후에도 매년 모교에서 AI 및 Arduino 강의를 진행하고 있습니다.",
+        en: "Invited back to my high school to teach AI and Arduino workshops every year in recognition of my dedication as a student.",
+      },
+      {
+        ko: "매회 약 30명의 고등학생을 대상으로 수준에 맞는 커리큘럼을 직접 설계하고 강의를 운영하고 있습니다.",
+        en: "Design and deliver hands-on lessons tailored to high school students, teaching around 30 students per session.",
+      },
+    ],
+  },
 ];
 
 export function getActivityData(locale: Locale): Activity[] {
