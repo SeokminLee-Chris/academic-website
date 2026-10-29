@@ -30,7 +30,7 @@ export const aboutMeSource: AboutMeSource = {
   institution: { ko: "국방과학연구소 (ADD)", en: "Agency for Defense Development" },
   institutionUrl: "https://www.add.re.kr/eps",
   description: {
-    ko: "현재 대한민국 육군 중위로 복무 중이며, 미국 DARPA에 해당하는 국방과학연구소(ADD)에서 과학기술전문사관(현역연구원)으로 근무하고 있습니다. DGIST 컴퓨터공학과를 졸업했습니다.",
+    ko: "현재 대한민국 육군 중위로 복무 중이며, 국방과학연구소(ADD)에서 과학기술전문사관(현역연구원)으로 근무하고 있습니다. 전역 예정일은 2028년 5월 31일입니다. DGIST 컴퓨터공학과를 졸업했습니다.",
     en: "I am currently serving as a First Lieutenant in the Republic of Korea Army and working as a research officer at the Agency for Defense Development, the Korean counterpart to the U.S. DARPA. Previously, I completed my bachelor's degree in Computer Science at DGIST.",
   },
   researchInterests: [
