@@ -22,7 +22,7 @@ export const educationSource: EducationSource[] = [
     },
     degree: { ko: "컴퓨터공학 학사", en: "B.S. in Computer Science and Engineering" },
     gpa: "4.12 / 4.30 (CS: 4.26 / 4.30)",
-    note: { ko: "전체 졸업생 중 3등", en: "3rd among all graduates" },
+    note: { ko: "2025년 2월 전체 졸업생 중 3등", en: "3rd among all graduates (Feb 2025)" },
   },
   {
     date: { ko: "2022.06 – 2022.08", en: "Jun 2022 – Aug 2022" },
