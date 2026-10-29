@@ -1,17 +1,21 @@
-export interface Publication {
-  year: string;
-  conference: string;
-  title: string;
-  authors: string;
+import { Locale, Localized, Text, localize } from "./i18n";
+
+export interface PublicationSource {
+  year: Text;
+  conference: Text;
+  title: Text;
+  authors: Text;
   paperUrl?: string;
   codeUrl?: string;
   pageUrl?: string;
   imageUrl?: string;
-  award?: string;
-  tldr?: string;
+  award?: Text;
+  tldr?: Text;
 }
 
-export const publicationData: Publication[] = [
+export type Publication = Localized<PublicationSource>;
+
+export const publicationSource: PublicationSource[] = [
   {
     year: "2026",
     conference: "CVPR Workshops",
@@ -23,3 +27,7 @@ export const publicationData: Publication[] = [
     imageUrl: "/images/CroBo.png",
   },
 ];
+
+export function getPublicationData(locale: Locale): Publication[] {
+  return localize(publicationSource, locale);
+}

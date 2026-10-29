@@ -3,21 +3,35 @@ import { PublicationEntry } from "@/components/publication-entry";
 import { ExperienceEntry } from "@/components/experience-entry";
 import { EducationEntry } from "@/components/education-entry";
 import { AwardEntry } from "@/components/award-entry";
-import { aboutMe } from "@/data/aboutme";
-import { publicationData } from "@/data/publication";
-import { experienceData } from "@/data/experience";
-import { educationData } from "@/data/education";
-import { awardData } from "@/data/award";
+import { LanguageToggle } from "@/components/language-toggle";
+import { Locale } from "@/data/i18n";
+import { ui } from "@/data/ui";
+import { getAboutMe } from "@/data/aboutme";
+import { getPublicationData } from "@/data/publication";
+import { getExperienceData } from "@/data/experience";
+import { getEducationData } from "@/data/education";
+import { getAwardData } from "@/data/award";
 
-export default function Home() {
+export function HomePage({ locale }: { locale: Locale }) {
+  const t = ui[locale];
+  const aboutMe = getAboutMe(locale);
+  const publicationData = getPublicationData(locale);
+  const experienceData = getExperienceData(locale);
+  const educationData = getEducationData(locale);
+  const awardData = getAwardData(locale);
+
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
-      <div className="max-w-screen-lg mx-auto px-8 py-16">
+      <div className="max-w-screen-lg mx-auto px-8 pt-6 pb-16">
+        <div className="mb-8">
+          <LanguageToggle current={locale} />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
           {/* Left Column - Fixed sidebar */}
           <div className="col-span-12 md:col-span-4 space-y-12 mb-8 md:mb-0">
             <div className="md:sticky top-12 space-y-8">
-              <ProfileSection aboutMe={aboutMe} />
+              <ProfileSection aboutMe={aboutMe} locale={locale} />
             </div>
           </div>
 
@@ -33,7 +47,7 @@ export default function Home() {
                 {aboutMe.researchInterests && (
                   <details className="mb-4">
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
-                      Research Interests
+                      {t.researchInterests}
                     </summary>
                     <ul className="mt-2 space-y-1 pl-8">
                       {aboutMe.researchInterests.map((interest, i) => (
@@ -47,7 +61,7 @@ export default function Home() {
                 {aboutMe.engineeringInterests && (
                   <details className="mb-4">
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
-                      Engineering Interests
+                      {t.engineeringInterests}
                     </summary>
                     <div className="mt-2 space-y-3 pl-8">
                       {aboutMe.engineeringInterests.map((paragraph, i) => (
@@ -65,12 +79,12 @@ export default function Home() {
             {publicationData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
-                  Publications
+                  {t.publications}
                 </h2>
                 <div className="space-y-6">
                   {publicationData.map((publication, index) => (
                     <div key={index}>
-                      <PublicationEntry publication={publication} />
+                      <PublicationEntry publication={publication} locale={locale} />
                       {index < publicationData.length - 1 && (
                         <div className="h-px bg-zinc-200 my-8" />
                       )}
@@ -84,11 +98,11 @@ export default function Home() {
             {experienceData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
-                  Experience
+                  {t.experience}
                 </h2>
                 <div className="space-y-4">
                   {experienceData.map((experience, index) => (
-                    <ExperienceEntry key={index} experience={experience} />
+                    <ExperienceEntry key={index} experience={experience} locale={locale} />
                   ))}
                 </div>
               </section>
@@ -98,11 +112,11 @@ export default function Home() {
             {educationData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-4 tracking-wide font-bold uppercase border-b border-zinc-200">
-                  Education
+                  {t.education}
                 </h2>
                 <div className="space-y-6">
                   {educationData.map((education, index) => (
-                    <EducationEntry key={index} education={education} />
+                    <EducationEntry key={index} education={education} locale={locale} />
                   ))}
                 </div>
               </section>
@@ -112,7 +126,7 @@ export default function Home() {
             {awardData.length > 0 && (
               <section>
                 <h2 className="font-serif text-xl mb-6 tracking-wide font-bold uppercase border-b border-zinc-200">
-                  Awards
+                  {t.awards}
                 </h2>
                 <div className="space-y-8">
                   {awardData.map((award, index) => (

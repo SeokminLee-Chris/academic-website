@@ -6,9 +6,12 @@ import {
   MapPin,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
+import { Locale } from "@/data/i18n";
+import { ui } from "@/data/ui";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
+  locale: Locale;
 }
 
 function GitHubIcon({ size = 14 }: { size?: number }) {
@@ -39,8 +42,9 @@ function LinkedInIcon({ size = 14 }: { size?: number }) {
   );
 }
 
-export function ProfileSection({ aboutMe }: ProfileSectionProps) {
+export function ProfileSection({ aboutMe, locale }: ProfileSectionProps) {
   if (!aboutMe) return null;
+  const t = ui[locale];
 
   return (
     <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
@@ -110,7 +114,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                 size={12}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
-              <span className="tracking-wider uppercase">Blog</span>
+              <span className="tracking-wider uppercase">{t.blog}</span>
             </a>
           )}
           {aboutMe.cvUrl && (
@@ -124,7 +128,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                 size={12}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
               />
-              <span className="tracking-wider uppercase">CV</span>
+              <span className="tracking-wider uppercase">{t.cv}</span>
             </a>
           )}
         </div>
@@ -187,7 +191,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
 
         {aboutMe.lastUpdated && (
           <p className="mt-6 text-xs text-zinc-500 tracking-wide">
-            Last updated: {aboutMe.lastUpdated}
+            {t.lastUpdated}: {aboutMe.lastUpdated}
           </p>
         )}
       </div>

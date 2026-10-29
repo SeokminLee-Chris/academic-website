@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Publication } from "@/data/publication";
+import { Locale } from "@/data/i18n";
+import { ui } from "@/data/ui";
 
 const highlightNames = ["Seokmin Lee"];
 
@@ -33,7 +35,8 @@ function renderAuthors(authors: string) {
   );
 }
 
-export function PublicationEntry({ publication }: { publication: Publication }) {
+export function PublicationEntry({ publication, locale }: { publication: Publication; locale: Locale }) {
+  const t = ui[locale];
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   return (
@@ -72,7 +75,7 @@ export function PublicationEntry({ publication }: { publication: Publication }) 
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-              <span className="tracking-wider uppercase">Paper</span>
+              <span className="tracking-wider uppercase">{t.paper}</span>
             </a>
           )}
           {publication.pageUrl && (
@@ -83,7 +86,7 @@ export function PublicationEntry({ publication }: { publication: Publication }) 
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-              <span className="tracking-wider uppercase">Page</span>
+              <span className="tracking-wider uppercase">{t.page}</span>
             </a>
           )}
           {publication.codeUrl && (
@@ -94,7 +97,7 @@ export function PublicationEntry({ publication }: { publication: Publication }) 
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-              <span className="tracking-wider uppercase">Code</span>
+              <span className="tracking-wider uppercase">{t.code}</span>
             </a>
           )}
         </div>

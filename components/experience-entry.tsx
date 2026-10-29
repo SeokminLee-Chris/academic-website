@@ -1,6 +1,9 @@
 import { Experience } from "@/data/experience";
+import { Locale } from "@/data/i18n";
+import { ui } from "@/data/ui";
 
-export function ExperienceEntry({ experience }: { experience: Experience }) {
+export function ExperienceEntry({ experience, locale }: { experience: Experience; locale: Locale }) {
+  const t = ui[locale];
   return (
     <div className="flex gap-4">
       {/* Timeline dot + line */}
@@ -39,9 +42,9 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
 
         {(experience.manager || experience.advisor) && (
           <p className="text-sm text-zinc-500 mb-2">
-            {experience.manager && <><strong>Manager:</strong> {experience.manager}</>}
+            {experience.manager && <><strong>{t.manager}:</strong> {experience.manager}</>}
             {experience.manager && experience.advisor && " / "}
-            {experience.advisor && <><strong>Advisor:</strong> {experience.advisor}</>}
+            {experience.advisor && <><strong>{t.advisor}:</strong> {experience.advisor}</>}
           </p>
         )}
 
@@ -67,7 +70,7 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
             rel="noopener noreferrer"
             className="inline-block mt-2 text-xs text-zinc-400 hover:text-zinc-700 underline underline-offset-2 transition-colors"
           >
-            View Projects →
+            {t.viewProjects}
           </a>
         )}
       </div>

@@ -14,12 +14,12 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-inter), Georgia, serif;
+  font-family: var(--font-inter), var(--font-noto-sans-kr), Georgia, serif;
 }
 
 .font-serif,
 .serif {
-  font-family: var(--font-inter), ui-serif, var(--font-pt-serif), var(--font-noto-serif), Georgia, serif;
+  font-family: var(--font-inter), var(--font-noto-sans-kr), ui-serif, var(--font-pt-serif), var(--font-noto-serif), Georgia, serif;
 }
 
 .font-noto-serif {
