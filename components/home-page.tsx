@@ -45,7 +45,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                   {aboutMe.description}
                 </p>
                 {aboutMe.researchInterests && (
-                  <details className="mb-4">
+                  <details open className="mb-4">
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
                       {t.researchInterests}
                     </summary>
@@ -59,7 +59,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                   </details>
                 )}
                 {aboutMe.engineeringInterests && (
-                  <details className="mb-4">
+                  <details open className="mb-4">
                     <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
                       {t.engineeringInterests}
                     </summary>
