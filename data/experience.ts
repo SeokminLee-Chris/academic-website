@@ -36,7 +36,7 @@ export const experienceSource: ExperienceSource[] = [
       },
       {
         ko: "현재 Computer Vision 관련 업무를 담당하고 있으며, 구체적인 내용은 보안상 공개할 수 없는 점 양해 부탁드립니다.",
-        en: "I am currently working on computer vision tasks at ADD. Details of my work cannot be disclosed for security reasons.",
+        en: "I currently work on computer vision research at ADD. Due to security restrictions, I cannot share further details about my work.",
       },
     ],
   },
