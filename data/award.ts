@@ -16,7 +16,7 @@ export const awardSource: AwardSource[] = [
     title: { ko: "CES 혁신상", en: "CES Innovation Award" },
     organization: "CES",
     description: {
-      ko: "컴퓨터 비전 기반 핸드 트래킹 글러브 기술의 혁신성을 인정받아 QUESTER 소속으로 CES 2025에서 수상했습니다.",
+      ko: "Computer Vision 기반 핸드 트래킹 글러브 기술의 혁신성을 인정받아 QUESTER 소속으로 CES 2025에서 수상했습니다.",
       en: "Awarded at CES 2025 as part of QUESTER for innovation in hand-tracking glove technology with computer vision.",
     },
     imageUrl: "/images/CES-innovation-awards.jpg",
