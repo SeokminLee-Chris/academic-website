@@ -52,22 +52,22 @@ export const experienceSource: ExperienceSource[] = [
   },
   {
     date: { ko: "2024.06 – 2024.08", en: "Jun 2024 – Aug 2024" },
-    title: { ko: "그래프 신경망 연구 인턴", en: "Graph Neural Network Research Intern" },
+    title: { ko: "연구 인턴", en: "Graph Neural Network Research Intern" },
     company: { ko: "울름 대학교 (Universität Ulm)", en: "Universität Ulm" },
-    advisor: { ko: "Ansgar Scherp 교수", en: "Prof. Ansgar Scherp" },
+    advisor: { ko: "Ansgar Scherp 교수님", en: "Prof. Ansgar Scherp" },
     points: [
       {
-        ko: "독일 울름 대학교에서 few-shot 그래프 분류 연구를 수행했습니다.",
+        ko: "독일 울름 대학교에서 few-shot graph node classification 연구를 수행했습니다.",
         en: "Conducted research on few-shot graph classification at Universität Ulm, Germany.",
       },
     ],
   },
   {
     date: { ko: "2022.12 – 2024.01", en: "Dec 2022 – Jan 2024" },
-    title: { ko: "AI 안전성 연구 인턴", en: "AI Safety Research Intern" },
+    title: { ko: "연구 인턴", en: "AI Safety Research Intern" },
     company: "HASS LAB",
     companyUrl: "https://sites.google.com/view/hass-dgist/hass-lab",
-    advisor: { ko: "김백규 교수", en: "Prof. Baekgyu Kim" },
+    advisor: { ko: "김백규 교수님", en: "Prof. Baekgyu Kim" },
     points: [
       {
         ko: "언리얼 엔진으로 게임플레이 데모 및 실험용 게임을 개발했습니다.",
