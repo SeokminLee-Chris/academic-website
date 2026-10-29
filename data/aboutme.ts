@@ -35,11 +35,11 @@ export const aboutMeSource: AboutMeSource = {
   },
   researchInterests: [
     {
-      ko: "저는 AI 에이전트가 어떤 분야의 어려운 연구 문제든 풀 수 있도록 더 유능하게 만드는 데 관심이 있습니다. 경험으로부터 배우고, 실패를 돌아보며, 점점 더 복잡한 과제를 해결해 나가는 에이전트를 만들고 싶습니다.",
+      ko: "AI 에이전트를 더욱 강력하게 만들어 분야에 관계없이 다양한 연구 문제를 해결하는 데 관심이 있습니다. 에이전트가 스스로 경험을 쌓고, 실패에서 배우며, 점차 더 복잡한 문제를 해결할 수 있도록 만드는 연구를 하고 싶습니다.",
       en: "I'm interested in making AI agents more capable so they can solve challenging research problems across any field. I want to build agents that can learn from experience, reflect on their failures, and tackle increasingly complex tasks.",
     },
     {
-      ko: "예를 들어, 코딩 에이전트의 성공률을 높이기 위한 자기 성찰(self-reflection) 루프를 설계하는 데 관심이 있습니다. 로보틱스에서는 Genie 같은 월드 모델을 활용해 에이전트가 가상 환경에서 경험을 쌓고, 그 경험을 실제 환경에서의 성능 향상으로 이어지게 하는 것에도 관심이 있습니다.",
+      ko: "예를 들어, self-reflection loop를 설계해 코딩 에이전트의 작업 성공률을 높이거나, 로보틱스 분야에서 Genie와 같은 월드 모델을 활용해 가상 환경에서 다양한 경험을 쌓고 이를 실제 환경의 작업 성공률 향상으로 연결하는 연구에 관심이 있습니다.",
       en: "For example, I'm interested in designing self-reflection loops to improve the success rates of coding agents. In robotics, I'm also interested in using world models like Genie to let agents gain experience in virtual environments and apply what they learn to improve their performance in the real world.",
     },
   ],
