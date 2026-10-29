@@ -47,8 +47,8 @@ export const experienceSource: ExperienceSource[] = [
     companyUrl: "https://quester.kr/",
     points: [
       {
-        ko: "데이터 수집부터 모델 설계, 배포까지 전 과정을 주도했으며, C++ 기반의 객체 탐지, 세그멘테이션, 트래킹, 스테레오 매칭 파이프라인을 개발했습니다.",
-        en: "Led the complete AI pipeline from data collection through deployment, focusing on object detection, segmentation, tracking, and stereo matching using C++.",
+        ko: "Computer Vision 기반 핸드 트래킹 글러브를 개발하기 위해 데이터 수집부터 모델 설계, 배포까지 전 과정을 주도했으며, C++ 기반의 객체 탐지, 세그멘테이션, 트래킹, 스테레오 매칭 파이프라인을 개발했습니다.",
+        en: "To build a computer vision-based hand-tracking glove, I led the complete pipeline from data collection through model design and deployment, and developed object detection, segmentation, tracking, and stereo matching pipelines in C++.",
       },
       {
         ko: "삼성 C-Lab Outside 6기에 선정되었고, 2025 CES 혁신상을 수상했으며 라스베이거스 CES 2025 현장에서 직접 기술을 발표했습니다.",
