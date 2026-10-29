@@ -5,6 +5,7 @@ export interface AboutMe {
   institutionUrl?: string;
   description: string;
   researchInterests?: string[];
+  engineeringInterests?: string[];
   email: string;
   imageUrl?: string;
   blogUrl?: string;
@@ -31,6 +32,10 @@ export const aboutMe: AboutMe = {
     "World Models",
     "Computer Vision",
     "Agentic Systems",
+  ],
+  engineeringInterests: [
+    "I'm interested in automating all kinds of work. I enjoy building everything from simple rule-based systems to AI agents that can handle complex tasks and workflows.",
+    "I'm especially interested in automating not just repetitive administrative tasks, but also professional work in areas like accounting, law, and HR. I want to work closely with experts in these fields to understand their workflows and find better ways to automate them.",
   ],
   email: "lsm9434@gmail.com",
   imageUrl: "/images/profile.png",

@@ -24,7 +24,7 @@ export default function Home() {
           {/* Right Column - Scrolling content */}
           <div className="col-span-12 md:col-span-9 md:col-start-5 space-y-12">
 
-            {/* About + Research Interests */}
+            {/* About + Research Interests + Engineering Interests */}
             {aboutMe.description && (
               <section>
                 <p className="font-serif text-md leading-relaxed text-zinc-800 mb-5">
@@ -42,6 +42,20 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
+                  </details>
+                )}
+                {aboutMe.engineeringInterests && (
+                  <details className="mb-4">
+                    <summary className="cursor-pointer select-none font-serif text-md text-zinc-700 mb-1 tracking-wide font-bold uppercase">
+                      Engineering Interests
+                    </summary>
+                    <div className="mt-2 space-y-3 pl-8">
+                      {aboutMe.engineeringInterests.map((paragraph, i) => (
+                        <p key={i} className="font-serif text-md leading-relaxed text-zinc-800">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                   </details>
                 )}
               </section>
