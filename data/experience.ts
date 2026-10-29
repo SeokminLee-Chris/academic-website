@@ -52,7 +52,7 @@ export const experienceSource: ExperienceSource[] = [
   },
   {
     date: { ko: "2024.06 – 2024.08", en: "Jun 2024 – Aug 2024" },
-    title: { ko: "연구 인턴", en: "Graph Neural Network Research Intern" },
+    title: { ko: "연구 인턴 (DGIST DURA 프로그램 파견)", en: "Graph Neural Network Research Intern" },
     company: { ko: "울름 대학교 (Universität Ulm)", en: "Universität Ulm" },
     advisor: { ko: "Ansgar Scherp 교수님", en: "Prof. Ansgar Scherp" },
     points: [
@@ -76,6 +76,10 @@ export const experienceSource: ExperienceSource[] = [
       {
         ko: "특정 사람을 따라다니는 자율 RC카/드론을 제작했습니다.",
         en: "Built an autonomous RC car/drone that follows a specific person using computer vision.",
+      },
+      {
+        ko: "학부생을 위한 연구실 웹사이트를 개발했으며, 연구실 공식 웹페이지로 채택되어 현재까지 사용되고 있습니다.",
+        en: "Built a lab website for undergraduate students, which was adopted as the lab's official webpage and is still in use.",
       },
     ],
     projectUrl: "https://seokminlee-chris.github.io/self-introduction-website/projects_eng.html",
