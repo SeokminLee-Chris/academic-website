@@ -32,6 +32,21 @@ export const activitySource: ActivitySource[] = [
       },
     ],
   },
+  {
+    date: { ko: "2021.09 – 2023.12", en: "Sep 2021 – Dec 2023" },
+    title: { ko: "디지로이드 임원", en: "Executive Member, Digiroid" },
+    company: { ko: "DGIST 프로그래밍 동아리", en: "DGIST Programming Club" },
+    points: [
+      {
+        ko: "Python, 웹 개발, 알고리즘 스터디를 기획하고 리더로 활동했습니다.",
+        en: "Organized and led study groups on Python, web development, and algorithms.",
+      },
+      {
+        ko: "2023년 한 해 동안 후배들을 대상으로 인공지능과 자율주행 드론 제작에 관한 강의를 매주 진행했습니다.",
+        en: "Taught weekly classes on artificial intelligence and autonomous drone development to junior students throughout 2023.",
+      },
+    ],
+  },
 ];
 
 export function getActivityData(locale: Locale): Activity[] {
