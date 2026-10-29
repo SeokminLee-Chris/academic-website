@@ -36,7 +36,7 @@ export const experienceSource: ExperienceSource[] = [
   },
   {
     date: { ko: "2024.03 – 2025.03", en: "Mar 2024 – Mar 2025" },
-    title: { ko: "컴퓨터 비전 AI 연구원", en: "Sole Computer Vision AI Researcher" },
+    title: { ko: "Computer Vision AI 연구원", en: "Sole Computer Vision AI Researcher" },
     company: "QUESTER",
     companyUrl: "https://quester.kr/",
     points: [
